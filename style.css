@@ -1,0 +1,29 @@
+.profile-banner{
+    background-image: url('images/profile-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+}
+
+@media screen and (max-width:1300px) {
+    .profile-banner{
+        height: 20vh;
+
+    }
+}
+@media screen and (max-width:800px) {
+    .profile-banner{
+    background-size: contain;
+    margin-bottom: 150px;
+
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .profile-banner{ 
+    margin-bottom: 350px;
+
+    }
+    
+}

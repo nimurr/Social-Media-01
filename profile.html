@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me | Social-Media </title>
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- daisy ui and tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="tailwind.config.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-color": '#2F80ED',
+                        "text-color": '#333333'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: #F2F2F2;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="">
+        <nav class="bg-white">
+            <div class="navbar bg-base-100  lg:w-10/12 mx-auto flex justify-between">
+                <div class="">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars text-xl sm:text-3xl"></i>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="cursor-pointer mb-2 "><a class="font-semibold">Home</a></li>
+                            <li class="cursor-pointer mb-2 "><a class="font-semibold">Explore</a></li>
+                            <li class="cursor-pointer mb-2"><a class="font-semibold">Bookmarks</a></li>
+                        </ul>
+                    </div>
+                    <a href="index.html" target="_blank" class="normal-case text-xl cursor-pointer flex gap-2 items-center">
+                        <img class="w-6 sm:w-10" src="images/logo.png" alt="">
+                        <h2 class="text-xl sm:text-3xl font-semibold text-[#2F80ED]">Me</h2>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-semibold">Home</a></li>
+                        <li><a class="font-semibold">Explore</a></li>
+                        <li><a class="font-semibold">Bookmarks</a></li>
+                    </ul>
+                </div>
+                <div class="flex gap-2 cursor-pointer">
+                    <img class="w-6 sm:w-10 rounded-full" src="images/profile.jpg" alt="">
+                    <h2 class="text-sm font-semibold">Nerob</h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- profile  -->
+
+        <div class="profile-banner relative lg:mb-40 ">
+            <div class="w-11/12 sm:w-8/12 mx-auto bg-white rounded-xl relative -bottom-64 sm:-bottom-40 xl:-bottom-[55vh] p-5 shadow-lg ">
+                <div class="md:flex items-start justify-between ">
+                    <div class="md:flex gap-4"> 
+                        <img class="w-28 rounded-lg relative border-4 border-primary-color" src="images/profile-02.png" alt="">
+                        <div class="md:my-0 my-5">
+                            <div class="sm:flex gap-5 items-center">
+                                <h2 class="text-xl font-semibold">Nerob Islam</h2>
+                                <p class="text-xs">
+                                    <span class="mr-1">2k+ </span><span>Following</span>
+                                </p>
+                            </div>
+                            <div>
+                                Thakurgaon , Bangladesh 🇧🇩
+                            </div>
+                        </div>
+                    </div>
+                    <button class="py-2 px-3 text-white font-semibold text-xs rounded-lg bg-primary-color"><i
+                        class="fa-solid fa-user-plus mr-1"></i> Follow</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- my posts  -->
+
+        <section class="w-11/12 md:w-8/12 mx-auto">
+
+            <!-- all post  -->
+            <div class="my-10 bg-white p-4 rounded-xl">
+                <div class="flex gap-4 items-center">
+                    <img class="w-10 " src="images/profile.jpg" alt="">
+                    <div>
+                        <h2>Nerob Islam</h2>
+                        <span class="text-xs"> 26 July at 08:26 </span>
+                    </div>
+                </div>
+
+                <p class="my-4 text-xs sm:text-sm">Traveling – it leaves you speechless, then turns you into a storyteller.</p>
+                <img class="rounded-lg w-full h-full" src="images/post/post1.jpg" alt="">
+
+                <div class="my-4 flex justify-between px-2">
+                    <div class="flex justify-center items-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="flex justify-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/comments.png" alt="">
+                        <p>Comment</p>
+                    </div>
+                    <div class="flex justify-center items-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/share.png" alt="">
+                        <span>Shere</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- all post  -->
+            <div class="my-10 bg-white p-4 rounded-xl">
+                <div class="flex gap-4 items-center">
+                    <img class="w-10 " src="images/profile.jpg" alt="">
+                    <div>
+                        <h2>Nerob Islam</h2>
+                        <span class="text-xs"> 26 July at 08:26 </span>
+                    </div>
+                </div>
+
+                <p class="my-4 text-xs sm:text-sm">Traveling – it leaves you speechless, then turns you into a storyteller.</p>
+                <img class="rounded-lg w-full h-full" src="images/post/post2.jpg" alt="">
+
+                <div class="my-4 flex justify-between px-2">
+                    <div class="flex justify-center items-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="flex justify-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/comments.png" alt="">
+                        <p>Comment</p>
+                    </div>
+                    <div class="flex justify-center items-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/share.png" alt="">
+                        <span>Shere</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- all post  -->
+            <div class="my-10 bg-white p-4 rounded-xl">
+                <div class="flex gap-4 items-center">
+                    <img class="w-10 " src="images/profile.jpg" alt="">
+                    <div>
+                        <h2>Nerob Islam</h2>
+                        <span class="text-xs"> 26 July at 08:26 </span>
+                    </div>
+                </div>
+
+                <p class="my-4 text-xs sm:text-sm">Traveling – it leaves you speechless, then turns you into a storyteller.</p>
+                <img class="rounded-lg w-full h-full" src="images/post/post3.jpg" alt="">
+
+                <div class="my-4 flex justify-between px-2">
+                    <div class="flex justify-center items-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="flex justify-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/comments.png" alt="">
+                        <p>Comment</p>
+                    </div>
+                    <div class="flex justify-center items-center cursor-pointer gap-2">
+                        <img class="w-4 sm:w-6" src="images/share.png" alt="">
+                        <span>Shere</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
